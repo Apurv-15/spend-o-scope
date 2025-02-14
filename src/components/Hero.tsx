@@ -17,7 +17,7 @@ const Hero = () => {
             Take Control of Your <span className="text-gradient">Finances</span> with Ease
           </h1>
           
-          <p className="mt-6 text-lg text-gray-600 animate-fade-up [animation-delay:200ms]">
+          <p className="mt-6 text-lg text-gray-600 dark:text-gray-300 animate-fade-up [animation-delay:200ms]">
             Track expenses, analyze spending patterns, and achieve your financial goals with our intuitive and powerful expense tracking platform.
           </p>
           
@@ -37,7 +37,7 @@ const Hero = () => {
                 <LineChart className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-semibold">Smart Analytics</h3>
-              <p className="text-sm text-gray-600 mt-2">Visualize your spending patterns</p>
+              <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">Visualize your spending patterns</p>
             </div>
             
             <div className="glass-card p-6 animate-float [animation-delay:200ms]">
@@ -45,7 +45,7 @@ const Hero = () => {
                 <PiggyBank className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-semibold">Save Money</h3>
-              <p className="text-sm text-gray-600 mt-2">Set and achieve savings goals</p>
+              <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">Set and achieve savings goals</p>
             </div>
             
             <div className="glass-card p-6 animate-float [animation-delay:400ms]">
@@ -53,7 +53,7 @@ const Hero = () => {
                 <CreditCard className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-semibold">Easy Tracking</h3>
-              <p className="text-sm text-gray-600 mt-2">Automate expense categorization</p>
+              <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">Automate expense categorization</p>
             </div>
           </div>
         </div>

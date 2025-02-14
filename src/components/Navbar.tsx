@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -16,7 +17,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/80 backdrop-blur-md shadow-sm" : ""
+        scrolled ? "bg-white/80 dark:bg-black/50 backdrop-blur-md shadow-sm" : ""
       }`}
     >
       <div className="container mx-auto px-4">
@@ -37,6 +38,7 @@ const Navbar = () => {
             </a>
           </div>
           <div className="flex items-center space-x-4">
+            <ThemeToggle />
             <Button variant="ghost" className="hidden md:inline-flex">
               Log in
             </Button>

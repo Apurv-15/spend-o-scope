@@ -12,6 +12,14 @@
     --ring: 222.2 84% 4.9%;
   }
 
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 260 20% 98%;
+    --border: 214.3 31.8% 30%;
+    --input: 214.3 31.8% 30%;
+    --ring: 222.2 84% 4.9%;
+  }
+
   body {
     @apply bg-background text-foreground antialiased;
   }
@@ -19,7 +27,7 @@
 
 @layer components {
   .glass-card {
-    @apply bg-white/80 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl;
+    @apply bg-white/80 dark:bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl;
   }
   
   .text-gradient {
@@ -28,7 +36,7 @@
 }
 
 .hero-pattern {
-  background-color: #ffffff;
-  background-image: radial-gradient(#9b87f5 0.5px, #ffffff 0.5px);
+  @apply bg-white dark:bg-[#1A1F2C];
+  background-image: radial-gradient(#9b87f5 0.5px, transparent 0.5px);
   background-size: 10px 10px;
 }
