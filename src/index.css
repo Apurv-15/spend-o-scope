@@ -33,11 +33,6 @@
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
   }
-
-  .floating-icon {
-    @apply absolute opacity-0;
-    animation: float-around 20s linear infinite;
-  }
 }
 
 .hero-pattern {
@@ -45,21 +40,3 @@
   background-image: radial-gradient(#9b87f5 0.5px, transparent 0.5px);
   background-size: 10px 10px;
 }
-
-@keyframes float-around {
-  0% {
-    transform: translate(0, 0) rotate(0deg);
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    transform: translate(var(--translate-x, 100px), var(--translate-y, -100px)) rotate(360deg);
-    opacity: 0;
-  }
-}
-
