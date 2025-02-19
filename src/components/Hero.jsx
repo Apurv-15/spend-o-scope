@@ -1,12 +1,33 @@
 
-import { ArrowRight, LineChart, PiggyBank, CreditCard } from "lucide-react";
+import { ArrowRight, LineChart, PiggyBank, CreditCard, DollarSign, TrendingUp, Wallet } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import HeroCanvas from "./HeroCanvas";
+// Temporarily commenting out HeroCanvas
+// import HeroCanvas from "./HeroCanvas";
+
+const FloatingIcons = () => (
+  <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+    <div className="floating-icon left-[10%] top-[20%]">
+      <DollarSign className="w-8 h-8 text-primary/50" />
+    </div>
+    <div className="floating-icon left-[80%] top-[15%] [animation-delay:1s]">
+      <Wallet className="w-6 h-6 text-primary/40" />
+    </div>
+    <div className="floating-icon left-[20%] top-[60%] [animation-delay:2s]">
+      <TrendingUp className="w-10 h-10 text-primary/30" />
+    </div>
+    <div className="floating-icon left-[70%] top-[70%] [animation-delay:3s]">
+      <PiggyBank className="w-8 h-8 text-primary/40" />
+    </div>
+    <div className="floating-icon left-[40%] top-[80%] [animation-delay:4s]">
+      <CreditCard className="w-6 h-6 text-primary/50" />
+    </div>
+  </div>
+);
 
 const Hero = () => {
   return (
     <div className="relative pt-32 pb-20 hero-pattern overflow-hidden">
-      <HeroCanvas />
+      <FloatingIcons />
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-block animate-fade-in">
